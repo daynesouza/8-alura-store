@@ -1,0 +1,19 @@
+@import '../../styles/variaveis';
+
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    width: 90vw;
+}
+.notFound__voltar{
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: $main__produto__text--color;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+

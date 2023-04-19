@@ -1,0 +1,18 @@
+@import '../../styles/variaveis';
+
+.filtro{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    padding: 2rem 0rem;
+}
+.filtro__titulo{
+    grid-column: 2;
+    color: $main__produto__text--color;
+
+}
+.filtro__select{
+    grid-column: 3;
+}

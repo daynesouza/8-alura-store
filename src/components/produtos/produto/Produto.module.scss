@@ -1,0 +1,36 @@
+@import "../../../styles/_variaveis.scss";
+
+.produto{
+    align-items: center;
+    background-color: $main__produto--backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 14rem;
+    width: 18%;
+}
+
+.produto__imagem{
+    width: 100%;
+    height: 60%;
+}
+.produto__container__text{
+    text-align: center;
+    width: 100%;
+}
+.produto__text{
+    font-size: 36px;
+    font-weight: 400;   
+    margin: 0.5rem;
+    color: $main__produto__text--color;
+}
+.produto__text__container--masculino{
+    background-color: $main__produto__text--masculino--backgroundColor;
+}
+.produto__text__container--feminino{
+    background-color: $main__produto__text--feminino--backgroundColor;
+}
+.produto__text__container--infantil{
+    background-color: $main__produto__text--infantil--backgroundColor;
+}
+

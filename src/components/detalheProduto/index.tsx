@@ -23,7 +23,7 @@ export default function DetalheProduto() {
                 </div>
                 <div className={s.produto__descricao}>
                     <p className={`${s.produto__descricao__text} ${s['produto__descricao__text--titulo']}`}>{produto.name}</p>
-                    <p className={s.produto__descricao__text}>Plataforma: {(produto.category.label).toUpperCase()}</p>
+                    <p className={s.produto__descricao__text}>Plataforma: {(produto.category).toUpperCase()}</p>
                     <p className={s.produto__descricao__text}>R$ {produto.price.toFixed(2)}</p>
                     <Button name='Comprar' onClick={ () =>  adicionarProdutoNoCarrinho({...produto, quantidade}) }/>
                 </div>

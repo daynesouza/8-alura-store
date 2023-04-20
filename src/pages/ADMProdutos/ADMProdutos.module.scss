@@ -1,0 +1,59 @@
+@import '../../styles/variaveis';
+
+//title
+.title__container{
+    align-items: center;
+    background-color: $cinza;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.title{
+    color: $preto;
+    font-size: 36px;
+}
+
+//produtos
+.produtos{
+    align-items: center;
+    background-color: $cinzaClaro;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0%;
+    row-gap: 1rem;
+    width: 100%;
+
+}
+.produtos__buttonAdicionar{
+    align-self:flex-start;
+    background-color: $preto;
+    color: $branco;
+    margin-left: 5%;
+}
+
+.produto{
+    align-items: center;
+    background-color: $branco;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 15rem;
+    width: 90%;
+}
+.produto__imagem{
+    width: 10rem;
+}
+.button{
+    border-style: none;
+    font-size: 36px;
+    padding: 1rem 2rem;
+}
+.produto__button--editar{
+    background-color: $roxo;
+    color:$branco;
+}
+.produto__button--excluir{
+    background-color: $vermelho;
+    color:$branco;
+}

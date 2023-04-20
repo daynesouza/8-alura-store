@@ -3,8 +3,11 @@ import s from './ADMCadastro.module.scss'
 
 export default function ADMCadastro(){
     return(
-        <>
-            <FormADM />
-        </>
+        <div className={s.cadastro}>
+            <FormADM 
+                title='Adicionar novo Produto'
+                button='Adicionar'
+            />
+        </div>
     )
 }

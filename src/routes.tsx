@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import PaginaPadraoADM from 'components/PaginaPadraoADM';
 import ADMProdutos from 'pages/ADMProdutos';
 import ADMCadastro from 'pages/ADMCadastro';
+import ADMEditar from 'pages/ADMEditar';
 
 export default function AppRouter(){
     return(
@@ -27,6 +28,7 @@ export default function AppRouter(){
                 <Route path='/adm' element={<PaginaPadraoADM />}>
                     <Route index element={<ADMProdutos />} />
                     <Route path='cadastro' element={<ADMCadastro />}/>
+                    <Route path='editar' element={<ADMEditar />}/>
                 </Route>
             </Routes>
         </Router>

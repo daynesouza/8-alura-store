@@ -1,13 +1,11 @@
 import { atom } from "recoil";
 import { Iproduto } from "types/produto";
 import { Icarrinho } from "types/carrinho";
-//import { produtosAsync } from "./seletores/useListaProdutos";
-import { produtos } from '../../db.json';
+import { produtosAsync } from "./seletores/useListaProdutos";
 
 export const listaDeProdutosState = atom<Iproduto[]>({
     key: 'listaDeProdutosState',
-    //default: produtosAsync
-    default: produtos
+    default: produtosAsync
 })
 
 export const listaDeComprasState = atom<Icarrinho[]>({
@@ -19,3 +17,8 @@ export const saldoTotalState = atom<number>({
     key: 'saldoTotalState',
     default: 0
 })
+export const produtoEditado = atom<Iproduto>({
+    key: 'produtoEditado',
+    default: undefined
+})
+

@@ -23,6 +23,7 @@ export default function Header() {
                     <li className={style.cabecalho__links}><Link className={style.cabecalho__link} to='/xbox'>Xbox</Link></li>
                     <li className={style.cabecalho__links}><Link className={style.cabecalho__link} to='/playstation'>Playstation</Link></li>
                     <li className={style.cabecalho__links}><Link className={style.cabecalho__link} to='/pc'>PC</Link></li>
+                    <li className={style.cabecalho__links}><Link className={style.cabecalho__link} to='/adm'>ADM</Link></li>
                     <li className={classNames({
                         [style.cabecalho__link]: true,
                         [style["cabecalho__links--pesquisa"]]: true

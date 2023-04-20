@@ -1,7 +1,7 @@
 import { Iproduto } from 'types/produto';
 import s from './ADMForm.module.scss';
 import { useState } from "react";
-import EditarProduto from 'common/EditarProduto';
+import useEditarProduto from 'common/EditarProduto';
 
 interface props {
     tipo: string,
@@ -21,7 +21,7 @@ export default function FormADM(props: props) {
     const [id, setId] = useState(produto?.id);
     const [category, setCategory] = useState('default');
 
-    const atualizarProduto = EditarProduto;
+    const atualizarProduto = useEditarProduto();
 
     const handleChange = (categoria:string) => {
         setCategory(categoria);
@@ -32,7 +32,8 @@ export default function FormADM(props: props) {
 
         if ( tipo === 'editar'){
             if (name && photo && price && id && category){
-                atualizarProduto({name, photo, price, id, category})
+                atualizarProduto({name, photo, price, id, category})                
+                alert('Produto editado com sucesso!')
             }
         }else {
             console.log('cadastrar')

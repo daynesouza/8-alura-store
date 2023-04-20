@@ -4,7 +4,7 @@ import { listaDeProdutosState } from 'state/atom';
 import { useParams } from 'react-router-dom';
 import Button from 'common/button';
 import NotFound from 'pages/NotFound';
-import useAdicionarCarrinho from 'common/AdicionarProduto';
+import useAdicionarCarrinho from 'common/AdicionarProdutoCarrinho';
 
 export default function DetalheProduto() {
     const { id } = useParams();

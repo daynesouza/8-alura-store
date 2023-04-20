@@ -1,6 +1,6 @@
 import style from './Produto.module.scss';
 import classNames from 'classnames';
-import useAdicionarCarrinho from 'common/AdicionarProduto';
+import useAdicionarCarrinho from 'common/AdicionarProdutoCarrinho';
 import Button from 'common/button';
 import { Iproduto } from 'types/produto';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +19,7 @@ export default function Produto( props: Iproduto){
 
             <div className={ classNames({
                 [style.produto__container__text]:true,
-                [style[`produto__text__container--${category.label.toLocaleLowerCase()}`]]:true
+                [style[`produto__text__container--${category.toLocaleLowerCase()}`]]:true
 
             })}>
                 <h3 className={ style.produto__text}>{name}</h3>

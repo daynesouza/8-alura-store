@@ -1,14 +1,18 @@
-import { selector, useRecoilValue } from "recoil";
+import http from "http";
+import { selector, useSetRecoilState } from "recoil";
+import { listaDeProdutosState } from "state/atom";
 import { Iproduto } from "types/produto";
 
 export const produtosAsync = selector({
+
     key: 'produtosAsyn',
+
     get: async () => {
-        const respostaHttp = await fetch('http://localhost:8080/produtos')
-        const produtosJson: Iproduto[] = await respostaHttp.json()
-        return produtosJson
+        const promise = http.get<Iproduto[]>('produtos')
+        const dataPromisse = promise.then(response => response.data)
+
+        return dataPromisse
     }
 })
-
 
 

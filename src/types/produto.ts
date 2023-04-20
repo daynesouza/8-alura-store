@@ -3,5 +3,5 @@ export interface Iproduto{
     photo: string,
     price: number,
     id: number,
-    category: any,
+    category: string,
 }

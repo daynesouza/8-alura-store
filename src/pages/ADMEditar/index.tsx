@@ -9,7 +9,8 @@ export default function ADMEditar(){
 
     return (
         <div className={s.editar}>
-            <FormADM 
+            <FormADM
+                tipo='editar'
                 title='Editar produto'
                 button='Editar'
                 produto={produto}

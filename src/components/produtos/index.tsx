@@ -11,7 +11,7 @@ export default function Produtos( {filtro} : {filtro:string}){
     let produtosFiltrados = [];
 
     if (filtro !== ''){
-        produtosFiltrados = produtos.filter( produto => produto.category.label === filtro);
+        produtosFiltrados = produtos.filter( produto => produto.category === filtro);
     }else{
         produtosFiltrados = produtos;
     }
